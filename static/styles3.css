@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cdcbcb; /* Light background */
+}
+
+/* Updated Navigation Bar */
+nav {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo – you can add this to your HTML if you want a distinct brand name */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    color: #3463F8;
+  }
+  
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7ff; /* Light background */
+}
+
+/* Centering the form */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+}
+
+/* Contact Card */
+.contact-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form Inputs */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+    font-weight: bold;
+    text-align: left;
+}
+
+form input, form textarea {
+    padding: 0.75em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Submit Button */
+form button {
+    margin-top: 1.5em;
+    padding: 0.75em;
+    background-color: #3463F8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2d52cb;
+}

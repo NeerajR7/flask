@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('portfolio') }}">Portfolio</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+    <section>
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is the home page.</p>
+    </section>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="main-header">
+    <nav class="navbar">
+      <!-- Logo / Name -->
+      <div class="logo">Neeraj Rijhwani</div>
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}" >Home</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>Hi, I’m <span>Neeraj Rijhwani</span><br/></h1>
+      <h2>I’m a Web Developer</h2>
+      <a href="{{ url_for('portfolio') }}" class="btn-primary">View Work</a>
+      <a href="{{ url_for('contact') }}" class="btn-primary">Contact</a>
+      <!-- Social Icons (Optional) -->
+      <!-- <div class="social-icons">
+        <a href="#"><img src="{{ url_for('static', filename='icons/linkedin.svg') }}" alt="LinkedIn"/></a>
+        <a href="#"><img src="{{ url_for('static', filename='icons/behance.svg') }}" alt="Behance"/></a>
+        <a href="#"><img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub"/></a>
+      </div> -->
+    </div>
+    <div class="hero-image">
+      <!-- Shape container with profile photo -->
+      <div class="image-shape">
+        <!-- Replace 'profile.jpg' with your own image in static/images/ -->
+        <img src="{{ url_for('static', filename='images/image.png') }}" alt="Profile Photo"/>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
